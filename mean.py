@@ -4,7 +4,7 @@ def mean(num_list):
         if isinstance(num_list[0], complex):
             return NotImplemented
     try:
-        return sum(num_list) / len(num_list)
+        return float(sum(num_list)) / len(num_list)
     except ZeroDivisionError:
         return 0
     except TypeError as detail:

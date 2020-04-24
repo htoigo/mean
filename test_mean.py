@@ -13,7 +13,6 @@ def test_zero():
     assert obs == exp
 
 def test_double():
-    # This one will fail in Python 2
     num_list = [1, 2, 3, 4]
     obs = mean(num_list)
     exp = 2.5
